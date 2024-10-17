@@ -1,0 +1,177 @@
+/* Dropdown menu buttons */
+.dropdown-menu button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+}
+
+/* Add dot before each dropdown option */
+.dropdown-menu button::before {
+  content: '•';
+  font-size: 18px;
+  color: #333;
+  margin-right: 10px; /* Adds space between dot and text */
+}
+
+/* Hover effect for dropdown buttons */
+.dropdown-menu button:hover {
+  background-color: #f0f0f0; /* Light gray on hover */
+}
+
+/* Task container */
+.task-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: 10px auto;
+  width: 50%;
+  background-color: #f9f9f9;
+  border: 1px solid #d3d3d3;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect to change background color */
+.task-container:hover {
+  background-color: #e0f0ff; /* Light blue background on hover */
+}
+
+/* Left section with task name and status */
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Task name styling */
+.task-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Task status styling with rounded box */
+.task-status {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  color: white;
+  margin-top: 5px;
+  
+  /* Prevent breaking of words */
+  white-space: nowrap;
+}
+
+/* Status colors based on task status */
+.status-progress {
+  background-color: #007bff; /* Blue for in-progress */
+}
+
+.status-pending {
+  background-color: #333; /* Black for pending */
+}
+
+.status-completed {
+  background-color: #28a745; /* Green for completed */
+}
+
+/* Edit container */
+.edit-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(133, 129, 129); /* Light grey border */
+  border-radius: 12px; /* Curved border */
+  padding: 5px; /* Padding for inner spacing */
+  background-color: white; /* Optional: Set a background color */
+}
+
+/* Input for editing task name */
+.edit-input {
+  padding: 8px;
+  border: none; /* Remove default border */
+  outline: none; /* Remove outline on focus */
+  border-radius: 10px; /* Curved edges */
+  margin-right: 5px; /* Space between input and buttons */
+  color: rgb(86, 83, 83); /* Light grey text color */
+  width: 200px; /* Set a width for the input field */
+  background-color: transparent; /* Transparent background for input */
+}
+
+/* Input placeholder styling */
+.edit-input::placeholder {
+  color: lightgrey; /* Light grey placeholder text */
+  opacity: 1; /* Ensure opacity is visible */
+}
+
+/* Right section for the icons */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Icon button styling */
+.icon-button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Icon color */
+.icon-button svg {
+  color: #666; /* Dark gray color */
+}
+
+/* Hover effect on icon buttons */
+.icon-button:hover {
+  background-color: #dcdcdc; /* Lighter gray on hover */
+}
+
+/* Dropdown container for the menu */
+.dropdown-container {
+  position: relative;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 160px; /* Increased width for longer text */
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Specific status colors for dropdown buttons */
+.status-set-in-progress {
+  color: #007bff; /* Blue for in-progress */
+}
+
+.status-set-pending {
+  color: #333; /* Black for pending */
+}
+
+.status-set-completed {
+  color: #28a745; /* Green for completed */
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .task-container {
+    width: 90%; /* Adjust the width for smaller screens */
+  }
+}

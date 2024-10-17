@@ -1,0 +1,16 @@
+.heading {
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    position: relative; 
+    margin: 20px auto; /* Center the heading and give vertical space */
+    width: 50%; /* Set width to 50% of the screen */
+    border-bottom: 2px solid lightgray; /* Light gray bottom border */
+    padding-bottom: 10px; /* Space between text and border */
+}
+
+.heading p {
+    margin: 0 10px; /* Space around the text */
+    font-size: 24px; /* Adjust font size as needed */
+    color: black; /* Black text color */
+}
