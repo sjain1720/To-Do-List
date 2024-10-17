@@ -1,0 +1,44 @@
+.progress-bar {
+    width: 50%; /* Cover half of the screen */
+    padding: 10px; /* Space around the contents */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the items */
+    align-items: center; /* Center items vertically */
+    margin: 0 auto; /* Center the progress bar in the viewport */
+}
+
+.progress-info {
+    font-size: 16px; /* Font size for the task count */
+    color: #333; /* Text color */
+    flex: 1; /* Allow this to take up available space */
+}
+
+.add-task-button {
+    margin-left: 20px; /* Space between info and button */
+}
+
+.add-button {
+    display: flex; /* Use flex for button layout */
+    align-items: center; /* Center items vertically */
+    background-color: transparent; /* Transparent background for the button */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.add-icon {
+    background-color: lightgray; /* Circular background color */
+    color: darkgray; /* Color of the add icon */
+    border-radius: 50%; /* Make the background circular */
+    width: 30px; /* Width of the circle */
+    height: 30px; /* Height of the circle */
+    display: flex; /* Flex to center the icon */
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 20px; /* Font size for the icon */
+}
+
+.add-text {
+    color: #333; /* Text color for "Add New Task" */
+    font-size: 16px; /* Font size for the text */
+}
